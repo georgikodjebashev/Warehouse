@@ -175,7 +175,7 @@ namespace Warehouse.Infrastructure.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Files");
+                    b.ToTable("Files", (string)null);
                 });
 
             modelBuilder.Entity("Warehouse.Infrastructure.Data.Category", b =>
@@ -201,7 +201,7 @@ namespace Warehouse.Infrastructure.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
 
                     b.HasData(
                         new
@@ -299,7 +299,7 @@ namespace Warehouse.Infrastructure.Data.Migrations
                     b.HasIndex("CustomerNumber")
                         .IsUnique();
 
-                    b.ToTable("Contragents");
+                    b.ToTable("Contragents", (string)null);
                 });
 
             modelBuilder.Entity("Warehouse.Infrastructure.Data.Deal", b =>
@@ -315,7 +315,7 @@ namespace Warehouse.Infrastructure.Data.Migrations
 
                     b.HasIndex("ContragentId");
 
-                    b.ToTable("Deals");
+                    b.ToTable("Deals", (string)null);
                 });
 
             modelBuilder.Entity("Warehouse.Infrastructure.Data.DealSubject", b =>
@@ -339,7 +339,7 @@ namespace Warehouse.Infrastructure.Data.Migrations
 
                     b.HasIndex("ItemId");
 
-                    b.ToTable("DealSubjects");
+                    b.ToTable("DealSubjects", (string)null);
                 });
 
             modelBuilder.Entity("Warehouse.Infrastructure.Data.Identity.ApplicationUser", b =>
@@ -448,7 +448,7 @@ namespace Warehouse.Infrastructure.Data.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Items");
+                    b.ToTable("Items", (string)null);
                 });
 
             modelBuilder.Entity("Warehouse.Infrastructure.Data.Rack", b =>
@@ -480,7 +480,7 @@ namespace Warehouse.Infrastructure.Data.Migrations
 
                     b.HasIndex("ItemId");
 
-                    b.ToTable("Racks");
+                    b.ToTable("Racks", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
